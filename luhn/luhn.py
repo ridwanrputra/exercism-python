@@ -16,7 +16,6 @@ class Luhn:
                 return luhny_bin(pos + 1, sum + int(head), tail)
             else:
                 return luhny_bin(pos + 1, sum + luhny_tune(int(head)), tail)
-
         return luhny_bin(0, 0, list(self.card_num[::-1]))
 
 
